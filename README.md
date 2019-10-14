@@ -8,33 +8,30 @@ Gathering FEC filing summaries for competitive 2020 races at the Q3 deadline
 
 ## Project goal
 
-*TK: Briefly describe this project*
+*CQ Roll Call politics reporters are interested in saving some time reporting quarterly summaries for competitive races. This attempts to help them do that.*
 
 ## Project notes
 
 ### Staff involved
 
-*TK: List people & contact info for people involved in the project*
-
-[Responsibility matrix](url-to-responsibility matrix)
-
-[HIRUFF Q&A](url-to-hiruff)
+*Political reporters Simone Pathé and Bridget Bowman gathered list of candidate committee IDs. Ilana Marcus helped with bash script. NewsNerds #campfin helped with various FEC filing questions. And Chris Zubak-Skees built [this miracle thing](https://github.com/PublicI/fec-loader/).*
 
 ### Data sources
 
-*TK: List access info & contact info for data sources used in the project*
+* Pull filings bracketed by desired dates from [here](https://www.fec.gov/data/filings/?data_type=efiling)
 
 ## Technical
 
-*TK: Instructions on how to bootstrap project, run ETL processes, etc.*
+* From source data pulled as mentioned above, filter based on desired committee IDs.
+* Check for filings that are not from the current quarter or are otherwise undesired.
+* Copy `file_number` column and paste as space-delimited array in bash script variable `files`.
+* Run `fec.sh`.
 
 ### Project setup instructions
 
 After cloning the git repo:
 
 `datakit data pull` to rerieve the data files.
-
-Open `fec-2019-q3.Rproj` in RStudio.
 
 *TK: For more complex or unusual projects additional directions follow*
 
