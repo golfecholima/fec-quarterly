@@ -18,22 +18,22 @@ Gathering FEC filing summaries for competitive 2020 races at the Q3 deadline
 
 ### Data sources
 
-* Pull filings bracketed by desired dates from [here](https://www.fec.gov/data/filings/?data_type=efiling)
+* [FEC filings data](https://www.fec.gov/data/filings/?data_type=efiling)
 
 ## Technical
 
-* From source data pulled as mentioned above, filter based on desired committee IDs.
-* Check for filings that are not from the current quarter or are otherwise undesired.
-* Copy `file_number` column and paste as space-delimited array in bash script variable `files`.
-* Run `fec.sh`.
+* In `etl/fec_files.py` change `committees` list to whatever campaigns you're interested in. Save the file.
+ * The script filters the source data for those and `report_type` of `Q3`.
+* From the project root run `.etl/fec.sh`.
+* Find your output csv in `/data/processed`.
 
 ### Project setup instructions
 
 After cloning the git repo:
 
-`datakit data pull` to rerieve the data files.
-
-*TK: For more complex or unusual projects additional directions follow*
+* Pull filings bracketed by desired dates from [FEC filings data](https://www.fec.gov/data/filings/?data_type=efiling).
+* Rename the file `filings.csv`.
+* Put it in `/data/source`.
 
 ## Data notes
 
