@@ -4,6 +4,7 @@ export PGHOST=localhost PGDATABASE=postgres PGUSER=postgres PGPASSWORD=
 fec init
 export PGHOST=localhost PGDATABASE=postgres PGUSER=postgres PGPASSWORD=
 
+# Make a variable out of pyton script output with ...
 # OUTPUT=($(python /path/path/script.py attr attr attr | tr -d '[],'))
 
 files=($(python3 ./etl/fec_files.py | tr -d '[],'))

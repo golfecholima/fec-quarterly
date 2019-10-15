@@ -5,7 +5,7 @@ import os
 wd = os.getcwd()
 filename = 'output1.csv'
 
-conn = psycopg2.connect(host="localhost",database="postgres", user="postgres", password="")
+conn = psycopg2.connect(host="localhost", database="postgres", user="postgres", password="")
 
 cur = conn.cursor()
 
