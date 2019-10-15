@@ -2,6 +2,7 @@
 .DS_Store
 
 .ipynb_checkpoints
+.vscode/
 
 data/
 !data/source/.gitkeep
