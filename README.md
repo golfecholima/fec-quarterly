@@ -28,6 +28,9 @@ Gathering FEC filing summaries for competitive 2020 races at the Q3 deadline
 * Find your output csv in `/data/processed`.
 
 ### Project setup instructions
+* You need Postgres on your computer. [Get it here](https://www.postgresql.org/download/).
+* In postgres you need the standard localhost database called `postgres` with user `postgres` and no password.
+ * If you change this stuff make sure to change it in `etl/fec.sh` and `etl/pgquery.py`.
 
 After cloning the git repo:
 
