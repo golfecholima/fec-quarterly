@@ -8,13 +8,22 @@ Gathering FEC filing summaries for competitive 2020 races at the Q3 deadline
 
 ## Project goal
 
-*CQ Roll Call politics reporters are interested in saving some time reporting quarterly summaries for competitive races. This attempts to help them do that.*
+*Save some time reporting on quarterly summaries for competitive races.*
 
 ## Project notes
 
-### Staff involved
+* You need [fec-loader](https://github.com/PublicI/fec-loader/).
+* FEC loader needs [PostgresQL](https://www.postgresql.org/download/).
+* In postgres you need the standard localhost database called `postgres` with user `postgres` and no password.
+ * If you change this stuff make sure to change it in `etl/fec.sh` and `etl/pgquery.py`.
+* Do python stuff by running `pipenv shell` from the project root after cloning.
 
-*Political reporters Simone Pathé and Bridget Bowman gathered list of candidate committee IDs. Ilana Marcus helped with bash script. NewsNerds #campfin helped with various FEC filing questions. And Chris Zubak-Skees built [this miracle thing](https://github.com/PublicI/fec-loader/).*
+### People involved
+
+* Political reporters Simone Pathé and Bridget Bowman gathered list of candidate committee IDs. 
+* Ilana Marcus helped with bash script. 
+* NewsNerds #campfin helped with various FEC filing questions. 
+* And Chris Zubak-Skees built [this miracle thing](https://github.com/PublicI/fec-loader/).
 
 ### Data sources
 
@@ -28,9 +37,6 @@ Gathering FEC filing summaries for competitive 2020 races at the Q3 deadline
 * Find your output csv in `/data/processed`.
 
 ### Project setup instructions
-* You need Postgres on your computer. [Get it here](https://www.postgresql.org/download/).
-* In postgres you need the standard localhost database called `postgres` with user `postgres` and no password.
- * If you change this stuff make sure to change it in `etl/fec.sh` and `etl/pgquery.py`.
 
 After cloning the git repo:
 
