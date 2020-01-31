@@ -33,7 +33,7 @@ Gathering FEC filing summaries for competitive 2020 races at the Q3 deadline
 
 * In `etl/fec_files.py` change `committees` list to whatever campaigns you're interested in. Save the file.
   * The script filters the source data for those and `report_type` of `Q3`.
-* From the project root run `.etl/fec.sh`.
+* From the project root run `. etl/fec.sh`.
 * Find your output csv in `/data/processed`.
 
 ### Project setup instructions
