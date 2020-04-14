@@ -31,18 +31,16 @@ Gathering FEC filing summaries for competitive 2020 races at the Q3 deadline
 
 ## Technical
 
-* In `etl/fec_files.py` change `committees` list to whatever campaigns you're interested in. Save the file.
-  * The script filters the source data for those and `report_type` of `Q3`.
-* From the project root run `. etl/fec.sh`.
-* Find your output csv in `/data/processed`.
-
-### Project setup instructions
-
 After cloning the git repo:
 
+* In `etl/fec_files.py` change `committees` list to whatever campaigns you're interested in. Save the file.
+  * By default, the script filters the source data for those and `report_type` of `Q3`.
+  * To change the report type (maybe it's an election year and you need the pre-primary, or 12P, reports too) edit the line `q3 = compete[compete['report_type'].isin('Q3')]`
 * Pull filings bracketed by desired dates from [FEC filings data](https://www.fec.gov/data/filings/?data_type=efiling).
 * Rename the file `filings.csv`.
 * Put it in `/data/source`.
+* From the project root run `. etl/fec.sh`.
+* Find your output csv in `/data/processed`.
 
 ## Data notes
 
