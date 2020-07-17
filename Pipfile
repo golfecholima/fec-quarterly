@@ -9,6 +9,7 @@ verify_ssl = true
 prompt-toolkit = ">=2.0.4"
 ipykernel = "*"
 pandas = "*"
+jupyterlab = "*"
 psycopg2 = "*"
 
 [requires]
