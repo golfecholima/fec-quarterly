@@ -36,5 +36,5 @@ After cloning the git repo:
 
 * [FEC filings data](https://www.fec.gov/data/filings/?data_type=efiling)
 
-**NOTE**
+**NOTE**  
 *While it's possible to download bulk(ish) raw data from https://www.fec.gov/data/filings/?data_type=efiling often the number of listed items is not the number of rows that will come out in your CSV (especially true on a filing deadline day). One way around this seems to be to fill in some date parameters that are outside the bounds of the dates you are interested in.*
