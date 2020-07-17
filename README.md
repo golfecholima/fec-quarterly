@@ -27,7 +27,7 @@ Gathering FEC filing summaries for competitive 2020 races at the Q3 deadline
 After cloning the git repo:
 
 * From the command line in the root director.
-  * Run `pipenv install` then `pipenv shell` then `jupyter lab`, which should open an iPython Notebook in your browser.
+  * Run `pipenv install` then `pipenv shell` then `jupyter-lab`, which should open an iPython Notebook in your browser.
 * Open `analysis/fec_files.ipynb`.
 * Follow the instructions there, running each cell as you go.
 * Find your output in `data/processed`.
