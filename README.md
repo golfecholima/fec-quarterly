@@ -1,6 +1,6 @@
-# FEC 2019 Q3
+# FEC Quarterly Filings
 
-Gathering FEC filing summaries for competitive 2020 races at the Q3 deadline
+Gathering FEC filing summaries for competitive 2020 races at the quarterly deadlines.
 
 *Created by George LeVines (<george.levines@gmail.com>)*
 
